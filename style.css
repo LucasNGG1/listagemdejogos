@@ -1,0 +1,169 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Fundo da página */
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Container principal */
+.container {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 450px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Estilização do formulário */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Campos de entrada */
+input, select {
+  padding: 12px;
+  font-size: 14px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #2a5298;
+  outline: none;
+}
+
+/* Botão de adicionar */
+button {
+  padding: 12px;
+  background: #2a5298;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1e3c72;
+}
+
+/* Estilização das estrelas */
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.star {
+  font-size: 26px;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.star.selected {
+  color: #ffcc00;
+}
+
+/* Lista de jogos */
+#gameList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+/* Cada item da lista */
+li {
+  background: #ffffff;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  overflow: hidden;
+}
+
+/* Ajuste para títulos longos */
+.game-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.game-title {
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+  color: #333;
+}
+
+.game-category {
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+}
+
+/* Exibição das estrelas */
+.stars-display {
+  font-size: 18px;
+  color: #ffcc00;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* Botão de remover */
+li button {
+  background: #ff4d4d;
+  padding: 6px 10px;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+li button:hover {
+  background: #e60000;
+}

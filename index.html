@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Jogos Zerados</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Meus Jogos Zerados</h1>
+
+    <div class="form">
+      <input type="text" id="gameInput" placeholder="Digite o nome do jogo">
+      
+      <select id="categorySelect">
+        <option value="Ação">Ação</option>
+        <option value="RPG">RPG</option>
+        <option value="Aventura">Aventura</option>
+        <option value="Estratégia">Estratégia</option>
+      </select>
+      
+      <!-- Avaliação por Estrelas -->
+      <div class="stars">
+        <label>Avaliação: </label>
+        <span class="star" onclick="rateGame(1)">&#9733;</span>
+        <span class="star" onclick="rateGame(2)">&#9733;</span>
+        <span class="star" onclick="rateGame(3)">&#9733;</span>
+        <span class="star" onclick="rateGame(4)">&#9733;</span>
+        <span class="star" onclick="rateGame(5)">&#9733;</span>
+        <input type="hidden" id="rating" value="0">
+      </div>
+      
+      <button onclick="addGame()">Adicionar Jogo</button>
+      <button class="clear-button" onclick="clearAllGames()">Limpar Tudo</button>
+    </div>
+
+    <ul id="gameList">
+      <!-- A lista de jogos será exibida aqui -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
