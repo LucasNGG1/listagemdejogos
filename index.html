@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meus Jogos Zerados</title>
+  <title>Filmes e series</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Meus Jogos Zerados</h1>
+    <h1>Filmes e Séries</h1>
 
     <div class="form">
-      <input type="text" id="gameInput" placeholder="Digite o nome do jogo">
+      <input type="text" id="gameInput" placeholder="Digite o nome do Filme / Série">
       
       <select id="categorySelect">
-        <option value="Ação">Ação</option>
-        <option value="RPG">RPG</option>
-        <option value="Aventura">Aventura</option>
-        <option value="Estratégia">Estratégia</option>
+        <option value="Comédia">Comédia</option>
+        <option value="Ação / Aventura">Ação / Aventura</option>
+        <option value="Terror">Terror</option>
+        <option value="Suspense">Suspense</option>
       </select>
       
       <!-- Avaliação por Estrelas -->
@@ -31,12 +31,12 @@
         <input type="hidden" id="rating" value="0">
       </div>
       
-      <button onclick="addGame()">Adicionar Jogo</button>
+      <button onclick="addGame()">Adicionar Filme / Série</button>
       <button class="clear-button" onclick="clearAllGames()">Limpar Tudo</button>
     </div>
 
     <ul id="gameList">
-      <!-- A lista de jogos será exibida aqui -->
+      <!-- A lista de Filmes e Series será exibida aqui -->
     </ul>
   </div>
 
